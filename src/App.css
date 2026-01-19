@@ -1,0 +1,78 @@
+/* Omni-Sentinel: The Ultimate Detailed UI */
+:root {
+  --deep-obsidian: #050505;
+  --emerald-glow: #10b981;
+  --panel-bg: rgba(20, 20, 20, 0.8);
+  --border-color: #222;
+}
+
+.omni-container {
+  background-color: var(--deep-obsidian);
+  background-image: radial-gradient(circle at 2px 2px, #111 1px, transparent 0);
+  background-size: 24px 24px;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  height: 60px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  background: #0a0a0a;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 300px;
+  flex: 1;
+  gap: 1px;
+  background: var(--border-color);
+}
+
+.panel {
+  background: var(--deep-obsidian);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.terminal-box {
+  background: #000;
+  border: 1px solid #111;
+  padding: 15px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--emerald-glow);
+  height: 200px;
+  margin-top: 20px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--emerald-glow);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  box-shadow: 0 0 10px var(--emerald-glow);
+}
